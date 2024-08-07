@@ -1,7 +1,6 @@
 const { BedrockRuntimeClient, InvokeModelCommand } = require("@aws-sdk/client-bedrock-runtime");
 const { Client, GatewayIntentBits } = require('discord.js');
 const config = require('./config.json');
-const awscredentials = require('./awscredentials.json')
 const reminder = 'Remember to shower after your valo session!'
 const client = new Client({
   intents: [
@@ -11,14 +10,11 @@ const client = new Client({
   ],
 });
 
-console.log("Access Key ID:", awscredentials.accessKeyId.substring(0, 5) + "...");
-console.log("Secret Access Key is set:", !!awscredentials.secretAccessKey);
-
 const bedrockClient = new BedrockRuntimeClient({
   region: "us-east-1",
   credentials: {
-    accessKeyId: awscredentials.accessKeyId,
-    secretAccessKey: awscredentials.secretAccessKey
+    accessKeyId: config.aws.accessKeyId,
+    secretAccessKey: config.aws.secretAccessKey
   },
 });
 

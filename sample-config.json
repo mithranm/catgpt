@@ -1,0 +1,9 @@
+{
+	"token": "TOKEN",
+	"clientId": "###",
+	"guildId": "###",
+	"aws": {
+			"accessKeyId": "ACCESSKEY",
+			"secretAccessKey": "SECRETACCESSKEY"
+	}
+}
