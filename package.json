@@ -7,7 +7,9 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@aws-sdk/client-bedrock-runtime": "^3.624.0",
-    "discord.js": "^14.15.3"
+    "axios": "^1.7.3",
+    "child_process": "^1.0.2",
+    "discord.js": "^14.15.3",
+    "pm2": "^5.4.2"
   }
 }
