@@ -1,2 +1,3 @@
-# A Discord Bot
-That enables access to LLaMA 405b
+# Where's the Discord Server
+
+I didn't make it yet sorry.
